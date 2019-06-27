@@ -45,7 +45,7 @@ function fifthFunction() {
     }, 10);
 }
 
-// firstFunction();
+firstFunction();
 
 function setTimeoutAndSetImmediateComparision() {
     console.log('You are in setTimeoutAndSetImmediateComparision function');
