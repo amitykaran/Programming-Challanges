@@ -1,5 +1,9 @@
 function firstFunction() {
     console.log('You are in first function');
+    setImmediate(function(){
+        console.log('You are in first function setimmediate');
+        secondFunction();
+    });
     setTimeout(function(){
         console.log('You are in first function call-back');
         secondFunction();
@@ -38,7 +42,8 @@ function fifthFunction() {
     console.log('You are in fifth function');
     setTimeout(function(){
         console.log('You are in fifth function call-back');
-    }, 0);
+    }, 10);
 }
 
-firstFunction();
+// firstFunction();
+
