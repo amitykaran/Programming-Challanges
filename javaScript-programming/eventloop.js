@@ -49,7 +49,7 @@ firstFunction();
 
 function setTimeoutAndSetImmediateComparision() {
     console.log('You are in setTimeoutAndSetImmediateComparision function');
-    // fifthFunction();
+    fifthFunction();
     setImmediate(function () {
         console.log('You are in setImmediate-callback');
     });
