@@ -47,3 +47,14 @@ function fifthFunction() {
 
 // firstFunction();
 
+function setTimeoutAndSetImmediateComparision() {
+    console.log('You are in setTimeoutAndSetImmediateComparision function');
+    // fifthFunction();
+    setImmediate(function () {
+        console.log('You are in setImmediate-callback');
+    });
+    setTimeout(function () {
+        console.log('You are in seTimeout-callback');
+    }, 9);
+}
+setTimeoutAndSetImmediateComparision();
