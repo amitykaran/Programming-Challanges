@@ -45,5 +45,5 @@ function fifthFunction() {
     }, 10);
 }
 
-// firstFunction();
+firstFunction();
 
